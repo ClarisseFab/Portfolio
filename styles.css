@@ -1,0 +1,96 @@
+:root{
+    --main-color: #3b6f3b; 
+    --second-color: blue; 
+    --third-color: rgb(225, 208, 222); 
+}
+
+/*Navbar*/
+.nav{
+    display: flex; 
+    justify-content: center;
+    position: fixed; 
+    top:0; 
+    left: 0; 
+    width: 100%; 
+    box-sizing: border-box;
+    box-shadow: 5px 2px 5px rgba(0,0,0,0.4);
+    background: var(--main-color); 
+    z-index: 10;
+}
+
+a{
+    text-decoration: none; 
+    color: white; 
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list a{
+    display: block;
+    font-size: 2.2rem; 
+    padding: 0.5rem; 
+}
+
+/*Section presentation*/
+
+.presentation{
+display: flex; 
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+width: 100%; 
+height: 100vh; 
+background-color: grey; 
+}
+
+h1{
+    font-size: 4rem; 
+    color: var(--third-color); 
+    font-family: 'Ardolint Tijza', sans-serif;
+    word-spacing: 0.8rem;
+    margin-bottom: 0; 
+}
+
+h{
+    color: var(--third-color); 
+    font-size: 2rem; 
+}
+
+/*Section projets*/
+
+.projets-header{
+    max-width: 640px;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 3.6rem; 
+    border-bottom: 0.2rem solid var(--main-color); 
+}
+
+.projets-grille{
+    display: grid; 
+    grid-template-columns: repeat(2, minmax(800px, 1fr));
+    width: 100%; 
+    max-width: 1280px; 
+    margin-left: 2rem; 
+    margin-bottom: 6rem; 
+}
+
+h2{
+    font-size: 2.5rem; 
+    display: block; 
+    text-align: center; 
+}
+
+.projet-image{
+    width: 50%; 
+    object-fit: cover;
+}
+
+.projet-titre{
+    padding: 1rem 0.5rem; 
+    color: var(--main-color); 
+}
+
