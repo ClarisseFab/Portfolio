@@ -4,6 +4,10 @@
     --third-color: rgb(225, 208, 222); 
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /*Navbar*/
 .nav{
     display: flex; 
